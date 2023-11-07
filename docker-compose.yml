@@ -7,7 +7,7 @@ x-airflow-common:
     &airflow-common-env
     AIRFLOW__CORE_SQL_ALCHEMY_CONN: sqlite:///usr/local/airflow/db/airflow.db
     AIRFLOW__CORE_LOAD_EXAMPLES: 'true'
-  volumns:
+  volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
